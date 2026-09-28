@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Educa+ Saúde: conteúdos educativos para ajudar você a cuidar melhor da sua saúde."
+    >
+
+    <title>Educa+ Saúde</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#conteudo-principal" class="pular-conteudo">
+        Pular para o conteúdo principal
+    </a>
+
+    <header>
+        <nav aria-label="Navegação principal">
+            <a
+                href="#inicio"
+                class="logo"
+                aria-label="Educa+ Saúde - Página inicial"
+            >
+                Educa+ Saúde
+            </a>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#conteudos">Conteúdos</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section id="inicio" class="hero">
+            <div class="hero-conteudo">
+                <p>Educação para uma vida mais saudável</p>
+
+                <h1>Aprenda a cuidar melhor da sua saúde.</h1>
+
+                <p>
+                    Encontre informações simples e educativas sobre
+                    alimentação, exercícios, bem-estar e prevenção.
+                </p>
+
+                <a href="#conteudos" class="botao-comecar">
+                    Começar agora
+                </a>
+            </div>
+                </section>
+
+        <section id="conteudos" class="secao">
+            <h2>Conteúdos de saúde</h2>
+
+            <p class="secao-descricao">
+                Escolha um tema e aprenda no seu ritmo.
+            </p>
+
+            <div class="categorias">
+                <article class="card">
+                    <span class="card-icone" aria-hidden="true">🥗</span>
+                    <h3>Alimentação saudável</h3>
+                    <p>
+                        Aprenda a montar refeições equilibradas
+                        e a criar hábitos alimentares melhores.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="card-icone" aria-hidden="true">🏃</span>
+                    <h3>Atividade física</h3>
+                    <p>
+                        Descubra exercícios simples para incluir
+                        movimento na sua rotina.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="card-icone" aria-hidden="true">😴</span>
+                    <h3>Sono e descanso</h3>
+                    <p>
+                        Entenda como o descanso influencia a saúde
+                        física e mental.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="card-icone" aria-hidden="true">🩺</span>
+                    <h3>Prevenção</h3>
+                    <p>
+                        Conheça atitudes de prevenção e cuidados
+                        básicos com a saúde.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="dicas" class="secao secao-dicas">
+            <h2>Dicas de saúde</h2>
+
+            <ul class="lista-dicas">
+                <li>Beba água ao longo do dia.</li>
+                <li>Inclua frutas e verduras nas refeições.</li>
+                <li>Durma de 7 a 9 horas por noite.</li>
+                <li>Pratique atividades físicas regularmente.</li>
+                <li>Mantenha as consultas e vacinas em dia.</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Receba mais conteúdos</h2>
+
+            <p class="secao-descricao">
+                Preencha o formulário e acompanhe novas dicas de saúde.
+            </p>
+
+            <form class="formulario" id="formulario-cadastro">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="tema">Tema de interesse</label>
+                    <select id="tema" name="tema" required>
+                        <option value="">Escolha um tema</option>
+                        <option value="alimentacao">Alimentação saudável</option>
+                        <option value="atividade">Atividade física</option>
+                        <option value="sono">Sono e descanso</option>
+                        <option value="prevencao">Prevenção</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem (opcional)</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="botao-enviar">
+                    Enviar cadastro
+                </button>
+
+                <p
+                    class="mensagem-formulario"
+                    id="mensagem-formulario"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+            </form>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <p>&copy; 2026 Educa+ Saúde.</p>
+    </footer>
+        
+
+
+    <script src="script.js"></script>
+</body>
+</html>
