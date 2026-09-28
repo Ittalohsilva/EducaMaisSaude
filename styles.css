@@ -1,0 +1,279 @@
+/* Link para navegação por teclado */
+.pular-conteudo {
+    position: absolute;
+    top: -60px;
+    left: 16px;
+    z-index: 1000;
+    padding: 12px 16px;
+    color: #ffffff;
+    background-color: #123c32;
+    border-radius: 6px;
+}
+
+.pular-conteudo:focus {
+    top: 16px;
+}
+
+/* Destaque para navegação pelo teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+}
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #18332d;
+    background-color: #f7fbf9;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce9e4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+
+.logo {
+    color: #12664f;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul a {
+    color: #18332d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #0b7a5a;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 70px 24px;
+    background-color: #e5f5ef;
+}
+
+.hero-conteudo {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-conteudo > p:first-child {
+    color: #12664f;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    margin: 12px 0 20px;
+    color: #123c32;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1.15;
+}
+
+.hero h1 + p {
+    max-width: 650px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.botao-comecar {
+    display: inline-block;
+    padding: 13px 22px;
+    color: #ffffff;
+    background-color: #12664f;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao-comecar:hover {
+    background-color: #0a503d;
+}
+
+/* Rodapé provisório */
+footer {
+    padding: 24px;
+    color: #ffffff;
+    background-color: #123c32;
+    text-align: center;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+}
+/* Seções de conteúdo */
+.secao {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+
+.secao h2 {
+    margin-top: 0;
+    color: #123c32;
+    font-size: 2rem;
+}
+
+.secao-descricao {
+    max-width: 600px;
+    margin-bottom: 36px;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #dce9e4;
+    border-radius: 12px;
+}
+
+.card-icone {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #12664f;
+    font-size: 1.15rem;
+}
+
+.card p {
+    margin: 0;
+}
+
+.secao-dicas {
+    max-width: none;
+    background-color: #e5f5ef;
+}
+
+.lista-dicas {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 22px;
+}
+
+.lista-dicas li {
+    margin-bottom: 10px;
+}
+/* Formulário */
+.formulario {
+    max-width: 560px;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid #dce9e4;
+    border-radius: 12px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 11px 12px;
+    color: #18332d;
+    background-color: #f7fbf9;
+    border: 1px solid #b9d3ca;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.botao-enviar {
+    padding: 13px 24px;
+    color: #ffffff;
+    background-color: #12664f;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background-color: #0a503d;
+}
+
+.mensagem-formulario {
+    margin: 16px 0 0;
+    font-weight: bold;
+}
+
+.mensagem-formulario.sucesso {
+    color: #0b6b4f;
+}
+
+.mensagem-formulario.erro {
+    color: #a3261b;
+}
