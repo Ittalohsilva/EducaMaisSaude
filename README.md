@@ -61,7 +61,8 @@ Educa+.
 ## Integrantes do grupo
 
 - Victor Carlos
-- (adicione os demais integrantes)
+- Ittalo Henrique
+- Mayara Karen
 
 ## Observação
 
