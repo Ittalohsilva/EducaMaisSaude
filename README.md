@@ -63,6 +63,7 @@ Educa+.
 - Victor Carlos
 - Ittalo Henrique
 - Mayara Karen
+- Guilherme Ourem
 
 ## Observação
 
